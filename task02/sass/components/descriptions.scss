@@ -1,0 +1,88 @@
+.description {
+
+  background: #474747;
+  @include breakpoint(md) {
+    background-image: url("../img/pattern.png");
+  }
+
+  padding: 45px 40px 100px 40px;
+
+  &__title {
+    margin-bottom: 95px;
+    color: #f5c506;
+    font-size: 39px;
+    text-align: center;
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    width: 100%;
+    @include breakpoint(md) {
+      width: 55%;
+    }
+  }
+  &__item:last-child {
+    display: none;
+    @include breakpoint(md) {
+      width: 45%;
+      display: block;
+    }
+  }
+
+  &__img {
+    position: relative;
+    margin: 0;
+    @include breakpoint(md) {
+      margin-right: 20px;
+    }
+  }
+  &__image {
+    width: 100%;
+  }
+
+  &__label {
+    background: #f5c506;
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: -15px;
+    top: -55px;
+  }
+  &__label-text {
+    line-height: 110px;
+  }
+
+  &__list {
+    display: none;
+    @include breakpoint(md) {
+      display: block
+    }
+  }
+  &__list-item {
+    padding-left: 20px;
+    position: relative;
+    color: #a9a9a7;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 25px;
+    &::before {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      background-color: #f5c506;
+      border-radius: 50%;
+      position: absolute;
+      top: 7px;
+      left: 0;
+    }
+  }
+
+}

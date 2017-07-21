@@ -1,0 +1,50 @@
+.features {
+  background-image: linear-gradient(45deg, transparent, transparent 48%, rgba(0, 0, 0, 0.16) 48%, rgba(0, 0, 0, 0.16) 52%, transparent 52%);
+  background-size: 6px 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 2;
+
+  &__items {
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  &__icon {
+    @extend .iconmoon-font;
+    color: $primary-color;
+    font-size: 50px;
+    margin-top: 30px;
+
+    &.features__icon--cloud::before {
+      content: "\e902";
+    }
+
+    &.features__icon--leaf::before {
+      content: "\e903";
+    }
+
+    &.features__icon--plain::before {
+      content: "\e901";
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+   font-size:18px;
+    margin: 20px auto 30px;
+
+    @include breakpoint(md) {
+      font-size: 23px;
+    }
+  }
+
+}

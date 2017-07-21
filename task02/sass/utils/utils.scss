@@ -1,0 +1,35 @@
+
+
+.iconmoon-font{
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+@mixin breakpoint($media) {
+  @if $media == xs {
+    @media only screen and (min-width: 320px) { @content; }
+  }
+  @if $media == sm {
+    @media only screen and (min-width: 570px) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: 1024px) { @content; }
+  }
+}
+
+@mixin additional-header-breakpoint(){
+  @media only screen and (min-width: 974px){@content;}
+}

@@ -1,0 +1,108 @@
+@import "../config/config";
+
+.header {
+
+  width: 100%;
+  background: $secondary-color;
+  @include breakpoint(md) {
+    background:
+            linear-gradient(45deg, transparent, transparent 48%, rgba(0,0,0,0.18) 48%, rgba(0,0,0,0.18) 52%, transparent 52%),
+            linear-gradient(-45deg, transparent, transparent 48%, rgba(0,0,0,0.18) 48%, rgba(0,0,0,0.18) 52%, transparent 52%),
+            url("../img/header-bg.jpg");
+    background-size: 0.8em 0.8em, 0.8em 0.8em, cover;
+  }
+
+
+  &__top {
+
+    padding: 0;
+
+    @include breakpoint(sm) {
+      display: table;
+    }
+    @include breakpoint(md) {
+      padding:25px 0 55px 0;
+    }
+  }
+
+  &__logo {
+    vertical-align: middle;
+    float:left;
+    //padding-left: 10px;
+    padding:9px 10px;
+
+    @include breakpoint(sm) {
+      display: table-cell;
+    }
+  }
+
+  &__menu {
+    vertical-align: middle;
+    text-align: right;
+
+    @include breakpoint(sm) {
+      display: table-cell;
+    }
+    @include breakpoint(md) {
+      vertical-align: bottom;
+      text-align: right;
+      padding-right:15px;
+
+    }
+
+  }
+
+  &__bottom{
+    display: table;
+    @include breakpoint(md) {
+      padding: 0 15px 70px 15px;
+    }
+
+  }
+
+  &__video{
+    display: table-cell;
+  }
+
+  &__text{
+    display: none;
+
+    @include breakpoint(md) {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    @include breakpoint(sm) {
+      width:42%;
+    }
+  }
+
+
+
+  /*
+
+
+  &__logo{
+    display: table-cell;
+    width:30%;
+    vertical-align: middle;
+
+    @include additional-header-breakpoint(){
+      width:45%;
+    }
+
+    @include breakpoint(md){
+      width:50%;
+    }
+
+
+
+  }
+
+  &__menu{
+    display: table-cell;
+
+  }*/
+
+}

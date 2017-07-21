@@ -1,0 +1,53 @@
+.logo{
+  text-decoration: none;
+  display: inline-block;
+
+  &__icon{
+    width:30px;
+    vertical-align: middle;
+
+    @include breakpoint(md){
+      width:80px;
+    }
+  }
+
+
+  &__text{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color:#fff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-weight: 400;
+    font-style: italic;
+    display: inline-block;
+
+    @include breakpoint(md){
+      font-size: 40px;
+    }
+  }
+  &__caption{
+    font-size:14px;
+    font-style: normal;
+    display: none;
+
+    @include breakpoint(lg){
+      display: inline-block;
+    }
+  }
+}
+
+.logo--small{
+
+  .logo__icon{
+    @include breakpoint(md){
+      width:50px;
+    }
+  }
+
+  .logo__text{
+    @include breakpoint(md){
+      font-size: 30px;
+    }
+  }
+}

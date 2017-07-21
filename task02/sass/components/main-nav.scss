@@ -1,0 +1,83 @@
+@import "../config/config";
+
+.main-nav {
+
+  &__bar {
+    @extend .iconmoon-font;
+    font-size: 30px;
+    color: $primary-color;
+    display:inline-block;
+    padding: 15px;
+    &::after {
+      content: "\e90e";
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+
+  }
+
+  &__nav {
+
+    &.main-nav__nav--active{
+      display: block;
+    }
+
+    display: none;
+    list-style: none;
+    //display: inline-block;
+    background: $primary-color;
+    overflow: hidden;
+    vertical-align: bottom;
+    @include breakpoint(md) {
+      box-shadow: -4px -4px 0 primary-color(0.5),
+      -8px -8px 0 primary-color(0.5);
+    }
+
+    @include breakpoint(sm) {
+      display: inline-block;
+    }
+  }
+
+  &__item {
+
+  text-align:left;
+    @include breakpoint(sm) {
+      float: left;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 15px;
+    text-transform: uppercase;
+    color: $primary-color-dark;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  &__icon {
+    @extend .iconmoon-font;
+    color: $primary-color-dark;
+    margin-right: 8px;
+
+    &.main-nav__icon--user::before {
+      content: "\e900";
+    }
+
+    &.main-nav__icon--service::before {
+      content: "\e90a";
+    }
+
+    &.main-nav__icon--letter::before {
+      content: "\e904";
+    }
+  }
+
+}
+
+

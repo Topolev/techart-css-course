@@ -1,0 +1,17 @@
+
+$primary-color: #f5c506;
+$primary-color-dark: #9b7d08;
+
+$secondary-color: #5a5a5a;
+
+
+$logo-font: 'Roboto', sans-serif;
+$main-font: 'Open Sans', sans-serif;;
+
+$container-padding: 15px;
+
+
+@function primary-color($opacity){
+  @return rgba(245, 197, 6, $opacity);
+}
+

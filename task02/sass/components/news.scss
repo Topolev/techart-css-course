@@ -1,0 +1,60 @@
+.news {
+  background: none;
+
+  @include breakpoint(md) {
+    background: url("../img/bg-news.jpg");
+    padding:0 10px;
+  }
+
+  &__title {
+    font-size: 37px;
+    text-transform: uppercase;
+    color: #fff;
+    padding:40px 0;
+    display: none;
+    @include breakpoint(md) {
+      display:block;
+    }
+  }
+
+  &__items {
+    overflow:hidden;
+
+    @include breakpoint(md) {
+      padding-bottom:100px;
+    }
+  }
+
+  &__item {
+    float: left;
+    display:flex;
+    align-items: stretch;
+    height:234px;
+    width:50%;
+    box-sizing: border-box;
+    padding:10px 5px 0 10px;
+
+    @include breakpoint(md) {
+      width:33.3%;
+      padding:0;
+    }
+  }
+
+  &__item:nth-child(2){
+    padding:10px 10px 0 5px;
+    @include breakpoint(md) {
+      padding:0 35px 0 0;
+    }
+  }
+
+  &__item:nth-child(3){
+    width:100%;
+    padding:10px 0 0 0;
+    @include breakpoint(md) {
+      width:33.3%;
+      padding:0;
+    }
+  }
+
+}
+
