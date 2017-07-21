@@ -1,0 +1,42 @@
+@import "../variables";
+
+.slider {
+  text-align: center;
+  background: url("../imgs/slide.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  color: $color-white-gray;
+  padding: 110px 0 120px 0;
+
+  &__title {
+    font-family: "PTSans", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    text-decoration: underline;
+    margin: 0 auto 20px;
+    max-width: 480px;
+    line-height: 1.35em;
+  }
+
+  &__description {
+    font-family: "Lato Regular", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.65em;
+    letter-spacing: 3px;
+    font-stretch: expanded;
+    text-transform: uppercase;
+
+    margin: 0 auto 35px;
+    max-width: 390px;
+
+  }
+  &__button {
+    font-size: 32px;
+  }
+
+}

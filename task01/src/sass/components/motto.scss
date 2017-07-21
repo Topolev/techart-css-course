@@ -1,0 +1,14 @@
+.motto{
+  text-align:center;
+  padding:40px 0;
+
+  &__title{
+    font-size: 34px;
+    font-weight: bold;
+  }
+  &__description{
+    font-size:24px;
+    font-weight:normal;
+    line-height:27px;
+  }
+}

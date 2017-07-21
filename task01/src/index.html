@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+</head>
+<body>
+
+<header class="container">
+    <div class="container__content header">
+        <div class="header__logo">Site Name</div>
+        <div class="navigation navigation_header header__nav">
+            <div class="header__toggle-button navigation__toggle-button">
+                <button class="button button_bg_empty js-navigation-toggle-button">
+                    <span class="icon-three-bars"></span>
+                </button>
+            </div>
+            <ul class="navigation__items  js-navigation-nav">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link link">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class=" navigation__link link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link link">Services</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link link">Project</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class=" navigation__link link">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+
+
+<section class="container slider">
+    <div class="container__content">
+        <h1 class="slider__title">Lorem ipsum laro dolore sit amet vivamus</h1>
+        <p class="slider__description">Lorem ipsum laro sit amet dolore sit ame</p>
+        <div class="slider__button">
+        <button class="button button_primary button_circle button_slider">
+            <span class="icon-long-arrow-down"></span>
+        </button>
+
+    </div>
+</section>
+
+<section class="container motto">
+    <div class="container__content">
+        <h1 class="motto__title">Lorem ipsum dolor sit amet</h1>
+        <p class="motto__description">Donec odio uisque volutpat mattis eros ullam malesuada erat ut turpis. </p>
+    </div>
+</section>
+
+
+<section class="container container_bg_light-gray">
+    <div class="container__content">
+        <div class="grid">
+            <div class="grid__cell-md-3 grid__cell-sm-6 info">
+                <div class="info__content">
+                    <div class="info__icon">
+                        <span class="icon-desktop"></span>
+                    </div>
+                    <h1 class="info__title">Nunc dignissim</h1>
+                    <p class="info__description">
+                        Praesent dapibus, neque id curs
+                        us faucibus, tortor neque egestas augue, eu vulputate magn
+                    </p>
+                    <div class="info__button">
+                        <button class="button button_bold">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__cell-md-3 grid__cell-sm-6 info">
+                <div class="info__content">
+                    <div class="info__icon">
+                        <span class="icon-flask"></span>
+                    </div>
+                    <h1 class="info__title">Aliquam tinci</h1>
+                    <p class="info__description">
+                        Donec consectetuer ligula v
+                        tate sem tristique cursus. Nam nulla quam, gravida info
+                    </p>
+                    <div class="info__button">
+                        <button class="button button_bold">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__cell-md-3 grid__cell-sm-6 info">
+                <div class="info__content">
+                    <div class="info__icon">
+                        <span class="icon-cogs"></span>
+                    </div>
+                    <h1 class="info__title">Vestibu auctor</h1>
+                    <p class="info__description">
+                        Jorbi rbi est est, blandit sit amet,
+                        sagittis vel, euismod vel, velit. Pellentesque egestas sem.
+                    </p>
+                    <div class="info__button">
+                        <button class="button button_bold">More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__cell-md-3 grid__cell-sm-6 info">
+                <div class="info__content">
+                    <div class="info__icon">
+                        <span class="icon-bullhorn"></span>
+                    </div>
+                    <h1 class="info__title">Civamus vesti</h1>
+                    <p class="info__description">
+                        Morbi est est, blandit sit amet,
+                        sagittis vel, euismod vel, velit. Pellentesque egestas sem.
+                    </p>
+                    <div class="info__button">
+                        <button class="button button_bold">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container portfolio">
+    <div class="container__content">
+        <div class="portfolio__title motto">
+            <h1 class="motto__title">Cras ornare tristique elit</h1>
+            <p class="motto__description">Donec odio uisque volutpat mattis eros ullam malesuada erat ut turpis. </p>
+        </div>
+        <div class="portfolio__control-buttons">
+            <div class="portfolio__wrap-buttons">
+                <button class="button button_bg_empty">
+                    <span class="icon-arrow-circle-left"></span>
+                </button>
+                <button class="button button_bg_empty">
+                    <span class="icon-arrow-circle-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+        <div class="portfolio__images grid">
+            <div class="grid__cell-md-3 grid__cell-sm-6">
+                <img src=<%= require("./imgs/orange01.jpg")%> class="portfolio__image">
+            </div>
+            <div class="grid__cell-md-3 grid__cell-sm-6">
+                <img src=<%= require("./imgs/orange02.jpg")%> class="portfolio__image">
+            </div>
+            <div class="grid__cell-md-3 grid__cell-sm-6">
+                <img src=<%= require("./imgs/orange03.jpg")%> class="portfolio__image">
+            </div>
+            <div class="grid__cell-md-3 grid__cell-sm-6">
+                <img src=<%= require("./imgs/orange04.jpg")%> class="portfolio__image">
+            </div>
+        </div>
+        <div class="portfolio__button">
+            <button class="button button_primary button_bold">View Portfolio</button>
+        </div>
+    </div>
+</section>
+
+
+<section class="container">
+    <div class="container__content grid">
+        <div class="grid__cell-md-6  employee">
+            <img src=<%= require("./imgs/employee01.jpg")%> class="employee__photo">
+            <div class="employee__wrap">
+                <h1 class="employee__title">Integer vitae libero</h1>
+                <p class="employee__about">
+                    Praesent dapibus, neque id cursus faucibus, tortor
+                    neque egestas augue, eu vulputate magna eros eu erat.
+                    Aliquam erat volutpat. Nam dui mi, tincidunt lorem ipsuk dolor
+                    <a href="" class="employee__link">+more</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid__cell-md-6 employee">
+            <img src=<%= require("./imgs/employee02.jpg")%> class="employee__photo">
+            <div class="employee__wrap">
+                <h1 class="employee__title">Vestibulum commodo</h1>
+                <p class="employee__about">
+                    Lorem dapibus, neque id cursus faucibus, tortor neque egestas augue,
+                    eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi,
+                    tincidunt quis, accumsan porttitor
+                    <a href="" class="employee__link">+more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container__content grid">
+        <div class="grid__cell-md-6 employee">
+            <img src=<%= require("./imgs/employee03.jpg")%> class="employee__photo">
+            <div class="employee__wrap">
+                <h1 class="employee__title">Fusce pellentesque</h1>
+                <p class="employee__about">
+                    Cations t dapibus, neque id cursus faucibus,
+                    tortor neque egestas augue, eu vulputate magna
+                    eros eu erat. Aliquam erat volutpat. Nam dui mi,
+                    tincidunt quis, accumsan porttitor, facilisis luctus, metus
+                    <a href="" class="employee__link">+more</a>
+                </p>
+            </div>
+        </div>
+        <div class="grid__cell-md-6  employee">
+            <img src=<%= require("./imgs/employee04.jpg")%> class="employee__photo">
+            <div class="employee__wrap">
+                <h1 class="employee__title">Donec quis dui dolor</h1>
+                <p class="employee__about">
+                    Sumitris dapibus, neque id cursus faucibus,
+                    tortor neque egestas augue, eu vulputate
+                    magna eros eu erat. Aliquam erat volutpat.
+                    Nam dui mi, tincidunt quis, accumsan porttitor,
+                    facilisis luctus, metus
+                    <a href="" class="employee__link">+more</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container container_bg_turquoise">
+    <div class="container__content feedback">
+        <div class="feedback__title motto feedback__title_border_buttom">
+            <h1 class="motto__title">Cras ornare tristique elit</h1>
+            <p class="motto__description">
+                Donec odio uisque volutpat mattis eros ullam malesuada erat ut turpis.
+            </p>
+        </div>
+        <div class="feedback__items grid">
+            <div class="feedback__item grid__cell-md-6">
+                <div class="simple-panel">
+                    <div class="simple-panel__icon">
+                        <span class="icon-envelope"></span>
+                    </div>
+                    <div class="simple-panel__content">
+                        <h1 class="simple-panel__title">Subscribe Our Newsletter</h1>
+                        <p class="simple-panel__description">
+                            via email on how to grow your business online
+                        </p>
+                    </div>
+                </div>
+                <div class="subscribe-form">
+                    <div class="subscribe-form__input">
+                        <input type="text" class="input input_bg_dark-turquoise"/>
+                    </div>
+                    <div class="subscribe-form__button">
+                        <button class="button button_secondary button_bold button_subscribe-form">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback__item grid__cell-md-6">
+                <div class="tweet">
+                    <div class="tweet__icon">
+                        <span class="icon-twitter"></span>
+                    </div>
+                    <div class="tweet__text">
+                        Donec nec justo eget felis facilisis fermentum. Aliquam porttitor
+                        mauris sit amet orci. Aenean dignissim pellentesque felis euismod in,
+                        pharetra a, ultricies in, diam. Sed arcu. Cras consequat
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="container__content grid">
+        <div class="grid__cell-sm-4 social">
+            <p class="social__icon">
+                <span class="icon-facebook"></span>
+            </p>
+            <div class="social__wrap">
+                <h1 class="social__title">Follow us on Facebook</h1>
+                <p class="social__description">Faucibus toroot menuts</p>
+            </div>
+        </div>
+        <div class="grid__cell-sm-4 social">
+            <p class="social__icon">
+                <span class="icon-google"></span>
+            </p>
+            <div class="social__wrap">
+                <h1 class="social__title">Follow us on Google+</h1>
+                <p class="social__description">Faucibus toroot menuts</p>
+            </div>
+        </div>
+        <div class="grid__cell-sm-4 social">
+            <p class="social__icon">
+                <span class="icon-linkedin"></span>
+            </p>
+            <div class="social__wrap">
+                <h1 class="social__title">Follow us on LInkedIn</h1>
+                <p class="social__description">Faucibus toroot menuts</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer container container_bg_turquoise">
+    <div class="container__content container_align_center">
+        <p class="footer__title">Designed by: www.alltemplateneeds.com / Images from: www.wallpaperswide.com / www.photorack.net Copyright(c)
+            website name. </p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>

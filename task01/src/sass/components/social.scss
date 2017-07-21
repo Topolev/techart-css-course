@@ -1,0 +1,28 @@
+.social{
+  display:flex;
+  align-items: center;
+  margin:35px 0 15px;
+
+  &__icon{
+    border-radius: 50%;
+    background: $color-orange;
+    color:$color-white-gray;
+    font-size: 32px;
+    height:70px;
+    width:70px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+  }
+
+  &__wrap{
+    padding-left:15px;
+  }
+
+  &__title{
+    font-size:18px;
+    font-weight: bold;
+  }
+}

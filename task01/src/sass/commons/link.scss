@@ -1,0 +1,14 @@
+@import "../variables";
+
+.link{
+  text-transform: inherit;
+  text-decoration: inherit;
+  font-style: inherit;
+  color: inherit;
+  display: block;
+
+  &:hover{
+    color: $color-orange;
+  }
+
+}

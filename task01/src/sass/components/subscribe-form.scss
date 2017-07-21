@@ -1,0 +1,16 @@
+@import "../variables";
+
+.subscribe-form{
+  display: table;
+  margin: 25px 0 0;
+  &__input{
+    display: table-cell;
+    width:100%;
+    padding-right:15px;
+  }
+  &__button{
+    display: table-cell;
+    white-space: nowrap;
+    font-size:16px;
+  }
+}

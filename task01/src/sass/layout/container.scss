@@ -1,0 +1,27 @@
+@import "../variables";
+
+.container{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+
+
+  &__content{
+    margin: 0 auto;
+    max-width: $width-container;
+    box-sizing: border-box;
+  }
+
+  &_align_center{
+    text-align: center;
+  }
+
+  &_bg_light-gray{
+    background: $color-light-gray;
+  }
+
+  &_bg_turquoise{
+    background: $color-turquoise;
+  }
+
+}

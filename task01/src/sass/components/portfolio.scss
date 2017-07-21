@@ -1,0 +1,51 @@
+@import "../variables";
+
+.portfolio {
+
+  text-align: center;
+
+  &__title {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 12px $grid-gutter-width/2 0;
+    padding-bottom: 30px;
+  }
+
+  &__control-buttons {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin: 0 $grid-gutter-width/2;
+
+    &::after, &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      border: 1px solid $color-light-gray;
+    }
+  }
+  &__wrap-buttons {
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+
+  &__images {
+
+  }
+  &__image {
+    max-width: 100%;
+    border-radius: $border-radius;
+    margin: 35px 0 20px 0;
+  }
+  &__button {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 21px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $color-light-gray;
+    margin:  0 15px;
+    margin-bottom:40px;
+  }
+}

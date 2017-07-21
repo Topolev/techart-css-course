@@ -1,0 +1,24 @@
+@import "../variables";
+
+.tweet {
+  background: $color-dark-turquoise;
+  border-radius: $border-radius;
+  padding:15px 25px;
+  display: table;
+  &__icon {
+    font-size: 64px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__text {
+    color: $color-light-turquoise;
+    line-height: 1.3em;
+    display: table-cell;
+    width:100%;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  @media (max-width: $break-point-md){
+    margin-top:20px;
+  }
+}

@@ -1,0 +1,75 @@
+@import '../variables';
+
+
+[class*='grid__cell-']{
+  float: left;
+  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 $grid-gutter-width/2;
+}
+
+.grid {
+  width: 100%;
+  display: table;
+
+  &::after{
+    clear:both;
+    content:"";
+  }
+
+
+  /*grid for xs*/
+  @for $i from 1 through $grid-columns{
+    &__cell-xs-#{$i}{
+      width: 100% / ($grid-columns - $i + 1);
+    }
+
+    &__cell-sm-#{$i}{
+      width: 100%;
+    }
+
+    &__cell-md-#{$i}{
+      width: 100%;
+    }
+
+    &__cell-lg-#{$i}{
+      width: 100%;
+    }
+
+  }
+
+  @media (min-width: $break-point-sm) {
+    /*grid for sm*/
+    @for $i from 1 through $grid-columns{
+      &__cell-sm-#{$i}{
+        width: $i* 100% / $grid-columns;
+      }
+    }
+  }
+
+  @media (min-width: $break-point-md) {
+    /*grid for md*/
+    @for $i from 1 through $grid-columns{
+      &__cell-md-#{$i}{
+        width: $i* 100% / $grid-columns;
+      }
+    }
+  }
+
+  @media (min-width: $break-point-lg) {
+    /*grid for lg*/
+    @for $i from 1 through $grid-columns{
+      &__cell-lg-#{$i}{
+        width: $i* 100% / $grid-columns;
+      }
+    }
+  }
+
+
+
+}
+
+
+
+
+

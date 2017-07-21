@@ -1,0 +1,71 @@
+@import '../variables';
+
+
+.button{
+  padding: $padding-button;
+  border-radius: $border-radius;
+  background: $color-turquoise;
+  color: $color-white-gray;
+  display: inline-block;
+  border: 2px solid $color-turquoise;
+  font-size: inherit;
+  line-height:1em;
+  cursor: pointer;
+  outline: none;
+
+  &:hover{
+    background: $color-orange;
+    border-color: $color-orange;
+  }
+
+  &_primary{
+    background: $color-orange;
+    color: $color-white-gray;
+    border: 2px solid $color-orange;
+  }
+  &_primary:hover{
+    background: $color-white-gray;
+    color:$color-orange;
+  }
+
+  &_secondary{
+    background: $color-dark-turquoise;
+    color: $color-white-gray;
+  }
+  
+  &_circle{
+    border-radius: 50%;
+  }
+
+  &_bold{
+    font-weight: bold;
+  }
+
+  &.button_font_lg{
+    font-size: 32px;
+  }
+
+  &.button_bg_empty{
+    color: $color-orange;
+    background: none;
+    border:none;
+    padding:0;
+    margin: 0 5px;
+  }
+  &.button_bg_empty:hover{
+    color: $color-turquoise;
+  }
+
+  &_slider{
+    height:70px;
+    width:70px;
+  }
+  &_subscribe-form{
+    padding:10px 20px;
+    border:none;
+  }
+  &_subscribe-form:hover{
+    border:none;
+  }
+
+}

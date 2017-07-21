@@ -1,0 +1,38 @@
+@import '../variables';
+
+.info{
+  color: $color-turquoise;
+  text-align: center;
+  border-right: 1px solid #d5d5d5;
+
+  &:last-child{
+    border:none;
+  }
+
+  &__content{
+    padding: $grid-gutter-width/2 0;
+  }
+
+  &__icon {
+    color: $color-orange;
+    font-size: 68px;
+    padding: 48px 0 0;
+  }
+
+  &__title{
+    font-weight: bold;
+    font-size: 22px;
+    margin:22px;
+  }
+  &__description{
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0 35px;
+  }
+  &__button{
+    font-size:16px;
+    font-weight: bold;
+    margin:15px 20px 40px 20px;
+  }
+}
+

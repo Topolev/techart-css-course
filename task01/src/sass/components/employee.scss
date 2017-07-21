@@ -1,0 +1,31 @@
+@import "../variables";
+
+.employee{
+  margin: 15px 0;
+
+  &__photo{
+    float: left;
+    max-width:100%;
+    border-radius: $border-radius;
+  }
+
+  &__wrap{
+    margin-left: 130px;
+  }
+
+  &__title{
+    font-size: 22px;
+    font-weight: bold;
+    color: $color-turquoise;
+  }
+
+  &__about{
+    font-size:14px;
+    line-height: 1.75em;
+    margin-top:10px;
+  }
+
+  &__link{
+    color: $color-orange;
+  }
+}
