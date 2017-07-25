@@ -37,6 +37,10 @@
     bottom: 12px;
     font-size: 14px;
     opacity: 0.6;
+    cursor: pointer;
+    &:hover{
+      opacity: 1;
+    }
     &::after {
       content: "\e907";
       color: #fff;

@@ -69,6 +69,10 @@
       opacity: 0.5;
       color: #fff;
       outline: none;
+      cursor: pointer;
+      &:hover{
+        opacity: 1;
+      }
     }
     .video__seek-bar-wrap {
       display: table-cell;
@@ -79,6 +83,7 @@
 
     .video__seek-bar {
       width: 100%;
+      cursor: pointer;
     }
 
     .video__sound {
@@ -86,7 +91,14 @@
       border: none;
       color: $primary-color;
       background: none;
+      outline: none;
+      cursor: pointer;
+
+      &--no{
+        opacity: 0.4;
+      }
     }
+
   }
 
 }
